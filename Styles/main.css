@@ -44,13 +44,21 @@ header, main, nav {
 
 header {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   z-index: 1;
   position: relative;
   left: 0;
 }
 
+header a {
+  position:absolute;
+  left:1%;
+  display: block;
+}
+header h1 {
+  display: block;
+}
 main {
   position: relative;
   left: 0;
@@ -70,6 +78,17 @@ h1 {
   padding: 0;
 }
 
+.main-video-container {
+
+  width:auto;
+  padding-bottom: 25px;
+}
+video {
+    max-height:767px; 
+}
+.main-photo-container {
+  width:auto;
+}
 .hamburger-link img {
   width: 36px;
 }
@@ -148,13 +167,44 @@ nav {
   border-bottom: 1px solid lightgrey
 }
 
-@media only screen and (min-width: 768px) and (max-width:1023px) {
+@media only screen and (min-width: 768px) and (max-width:1023px)  and (orientation: portrait){
   body {
     background: cornflowerblue;
+    width:100%;
+  }
+  header {
+    justify-content: center;
+  }
+  header a {
+    position:absolute;
+    left:1%;
+    width:auto;
+  }
+  header h1 {
+    align-self:flex-end;
+    width:auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width:1023px)  and (orientation: landscape){
+  body {
+    background: lime;
+    width:100%;
+  }
+  header {
+    justify-content: center;
+  }
+  header a {
+    position:absolute;
+    left:1%;
+    width:auto;
+  }
+  header h1 {
+    align-self:flex-end;
+    width:auto;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   body {
     background: antiquewhite;
   }
@@ -207,7 +257,8 @@ nav {
     width:auto;
     height:auto;
     border:none;
-    padding:0;
+    padding-bottom: 20px;;
+    display: block;
   }
   .nav-main-list-item +.nav-main-list-item {
     padding-left:25px;
@@ -221,12 +272,24 @@ nav {
   main {
     padding-top: 30px;
   }
+  .main-photo-container {
+    display:flex;
+    flex-flow: row nowrap;
+    padding-bottom: 25px;
+  }
+  main figure {
+    display: inline-block;
+    width: 48%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 
   .sub-menu-list {
     display: flex;
     flex-flow: column nowrap;
     order: 1;
     padding-left: 25%;
+    padding-top: auto;
   }
 
   .sub-menu img {
@@ -248,9 +311,7 @@ nav {
     width: 100%;
     padding-top: 30px;
     position: absolute;
-    top: 130px;
-    justify-content: center;
-    align-items: flex-start;
+    top: 100px;
   }
 
   .sub-menu {
@@ -272,4 +333,15 @@ nav {
     display: inline;
     width: auto;
   }
+
+  .main-video-container {
+    width:auto;
+    padding-bottom: 25px;
+  }
+
+
+
+
+
+
 }
