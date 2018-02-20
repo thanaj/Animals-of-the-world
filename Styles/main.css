@@ -1,0 +1,275 @@
+* {
+  /*border:0.1px solid black;*/
+}
+
+html {
+  /*font-size: 16px;*/
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.noScroll {
+  overflow: hidden;
+  position: fixed;
+}
+
+
+/* contains: header, nav, footer */
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* contains a with hamburger and logo in h*/
+
+header, main, nav {
+  transition: all 0.3s ease-in-out;
+  background: white;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  z-index: 1;
+  position: relative;
+  left: 0;
+}
+
+main {
+  position: relative;
+  left: 0;
+}
+
+main img {
+  width: 100%;
+}
+
+.moveMainAndHeader {
+  left: 70%;
+  border-left: 1px solid lightgrey;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger-link img {
+  width: 36px;
+}
+
+a[data-target="open-sub-menu"] {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+a[data-target="close-sub-menu"]>span {
+  padding-right: 5%;
+}
+
+
+/*--------visibility nav*/
+
+nav {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  visibility: hidden;
+}
+
+.visibleNav {
+  visibility: visible;
+}
+
+.sub-menu {
+  background: white;
+  width: 100%;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 768px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-menu ul {
+  margin: 0;
+  width: 100%;
+}
+
+.sub-menu li {
+  padding: 10px 0 0 25px;
+  margin: 0;
+}
+
+.sub-menu>a {
+  display: inline-block;
+  padding: 10px 0 0 25px;
+  margin: 0;
+  border-bottom: 1px solid lightgrey;
+  width: 80%;
+}
+
+.sub-menu img {
+  width: 99%;
+  display: block;
+}
+
+.open-sub-menu {
+  top: 0;
+  left: 0;
+  visibility: visible;
+}
+
+/*.nav-main-list li */
+.nav-main-list-item,
+.sub-menu-list > li{
+  display: inline-block;
+  width: 80%;
+  padding: 10px 0 0 25px;
+  margin: 0;
+  border-bottom: 1px solid lightgrey
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+  body {
+    background: cornflowerblue;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background: antiquewhite;
+  }
+  header {
+    margin: 10px 0;
+  }
+  .hamburger-link {
+    display: none;
+  }
+  nav {
+    width: 100%;
+    position: static;
+    visibility: visible;
+    /*
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    */
+    overflow: hidden;
+    z-index: 1;
+
+  }
+  /*
+  .nav-main-list-item,
+  .sub-menu-list > li{
+    display: inline-block;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid lightgrey
+  }
+ */
+
+  .nav-main-list {
+    /*
+    width: 100%;
+    margin: 25px auto;
+    padding: 10px;
+    */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    height:50px;
+
+  }
+  .nav-main-list-item {
+    width:auto;
+    height:auto;
+    border:none;
+    padding:0;
+  }
+  .nav-main-list-item +.nav-main-list-item {
+    padding-left:25px;
+  }
+  nav li {
+    border: none;
+  }
+  a span {
+    display: none;
+  }
+  main {
+    padding-top: 30px;
+  }
+
+  .sub-menu-list {
+    display: flex;
+    flex-flow: column nowrap;
+    order: 1;
+    padding-left: 25%;
+  }
+
+  .sub-menu img {
+    max-width: 100%;
+  }
+  .sub-menu figure {
+    order: 2;
+    position: relative;
+    left: -30%;
+  }
+  .sub-menu-list > li {
+    border:none;
+  }
+
+  .nav-main-list li:hover .sub-menu,
+  .sub-menu:hover .sub-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 130px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .sub-menu {
+    background: white;
+    width: 100%;
+    visibility: visible;
+    position: static;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    display: none;
+    padding-bottom: 30px;
+  }
+
+  a[data-target="close-sub-menu"] {
+    display: none;
+  }
+  a[data-target="open-sub-menu"] {
+    display: inline;
+    width: auto;
+  }
+}
