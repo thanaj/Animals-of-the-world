@@ -4,7 +4,7 @@
 
 html {
   /*font-size: 16px;*/
-  height:100%;
+  /*height:100%;*/
 }
 
 ul {
@@ -31,6 +31,7 @@ body {
   flex-flow: column nowrap;
   width: 100%;
   height: 100%;
+  font-family: Oxygen;
 }
 
 figure {
@@ -53,6 +54,7 @@ header {
   z-index: 1;
   position: relative;
   left: 0;
+
 }
 
 header a {
@@ -177,7 +179,7 @@ nav {
 .nav-main-list-item, .sub-menu-list>li {
   display: inline-block;
   width: 80%;
-  padding: 10px 0 10px 25px;
+  padding: 15px 0 10px 25px;
   margin: 0;
   border-bottom: 1px solid lightgrey
 }
@@ -214,18 +216,9 @@ footer label {
 }
 
 .color-span {
-  background-color: lightcoral;
+
 }
 
-.small-note {
-  /*
-  display: inline-block;
-  max-width: 550px;
-  */
-  margin: 20px;
-  text-align: justify;
-  letter-spacing: 0.3px;
-}
 
 input {
   width: 200px;
@@ -254,7 +247,7 @@ button:focus {
 
 @media only screen and (min-width: 768px) and (max-width:1023px) and (orientation: portrait) {
   body {
-    background: cornflowerblue;
+
     width: 100%;
   }
   header {
@@ -273,7 +266,7 @@ button:focus {
 
 @media only screen and (min-width: 768px) and (max-width:1023px) and (orientation: landscape) {
   body {
-    background: lime;
+
     width: 100%;
     height: 100%;
   }
@@ -293,7 +286,7 @@ button:focus {
 
 @media only screen and (min-width: 1025px) {
   body {
-    background: antiquewhite;
+
     width: 100%;
     height: 100%;
   }
