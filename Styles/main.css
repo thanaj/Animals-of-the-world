@@ -27,6 +27,8 @@ a {
 body {
   display: flex;
   flex-flow: column nowrap;
+  width:100%;
+  height:100%;
 }
 
 figure {
@@ -55,9 +57,11 @@ header a {
   position:absolute;
   left:1%;
   display: block;
+  max-width:auto;
 }
 header h1 {
   display: block;
+  max-width:auto;
 }
 main {
   position: relative;
@@ -84,7 +88,9 @@ h1 {
   padding-bottom: 25px;
 }
 video {
-    max-height:767px; 
+  display: block;
+  width:100%;
+  margin:auto;
 }
 .main-photo-container {
   width:auto;
@@ -166,7 +172,33 @@ nav {
   margin: 0;
   border-bottom: 1px solid lightgrey
 }
-
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin:30px
+}
+footer ul,
+footer form {
+  display: block;
+  margin:0 auto 20px;
+}
+footer li {
+  padding-bottom: 15px;
+}
+.footer-list li:first-of-type {
+   background-color: yellow;
+   font-weight: bold;
+ }
+footer > * {
+  text-align: center;
+}
+footer label {
+  font-weight: bold;
+}
+.color-span {
+  background-color: lightcoral;
+}
 @media only screen and (min-width: 768px) and (max-width:1023px)  and (orientation: portrait){
   body {
     background: cornflowerblue;
@@ -189,6 +221,7 @@ nav {
   body {
     background: lime;
     width:100%;
+    height:100%;
   }
   header {
     justify-content: center;
@@ -207,6 +240,8 @@ nav {
 @media only screen and (min-width: 1025px) {
   body {
     background: antiquewhite;
+    width:100%;
+    height:100%;
   }
   header {
     margin: 10px 0;
