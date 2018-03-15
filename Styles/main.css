@@ -176,7 +176,9 @@ footer {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  margin:30px
+  margin-top:30px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 footer ul,
 footer form {
@@ -199,6 +201,14 @@ footer label {
 .color-span {
   background-color: lightcoral;
 }
+.small-note{
+  display: inline-block;
+  max-width: 550px;
+  margin-left: 20px;
+  text-align: justify;
+  letter-spacing: 0.3px;
+}
+
 @media only screen and (min-width: 768px) and (max-width:1023px)  and (orientation: portrait){
   body {
     background: cornflowerblue;
