@@ -4,6 +4,7 @@
 
 html {
   /*font-size: 16px;*/
+  height:100%;
 }
 
 ul {
@@ -13,6 +14,7 @@ ul {
 }
 
 a {
+  color: black;
   text-decoration: none;
 }
 
@@ -27,8 +29,8 @@ a {
 body {
   display: flex;
   flex-flow: column nowrap;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 
 figure {
@@ -46,7 +48,7 @@ header, main, nav {
 
 header {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   z-index: 1;
   position: relative;
@@ -54,15 +56,18 @@ header {
 }
 
 header a {
-  position:absolute;
-  left:1%;
+  position: absolute;
+  left: 1%;
   display: block;
-  max-width:auto;
+  max-width: auto;
 }
+
 header h1 {
   display: block;
-  max-width:auto;
+  max-width: auto;
+  font-size: 24px;
 }
+
 main {
   position: relative;
   left: 0;
@@ -73,7 +78,7 @@ main img {
 }
 
 .moveMainAndHeader {
-  left: 70%;
+  left: 60%;
   border-left: 1px solid lightgrey;
 }
 
@@ -83,20 +88,23 @@ h1 {
 }
 
 .main-video-container {
-
-  width:auto;
+  width: auto;
   padding-bottom: 25px;
 }
+
 video {
   display: block;
-  width:100%;
-  margin:auto;
+  width: 100%;
+  margin: auto;
 }
+
 .main-photo-container {
-  width:auto;
+  width: auto;
 }
+
 .hamburger-link img {
-  width: 36px;
+  width: 24px;
+  margin: 2px 0 0 2px;
 }
 
 a[data-target="open-sub-menu"] {
@@ -144,9 +152,9 @@ nav {
   margin: 0;
 }
 
-.sub-menu>a {
+.sub-menu > a {
   display: inline-block;
-  padding: 10px 0 0 25px;
+  padding: 10px 0 10px 25px;
   margin: 0;
   border-bottom: 1px solid lightgrey;
   width: 80%;
@@ -163,95 +171,131 @@ nav {
   visibility: visible;
 }
 
+
 /*.nav-main-list li */
-.nav-main-list-item,
-.sub-menu-list > li{
+
+.nav-main-list-item, .sub-menu-list>li {
   display: inline-block;
   width: 80%;
-  padding: 10px 0 0 25px;
+  padding: 10px 0 10px 25px;
   margin: 0;
   border-bottom: 1px solid lightgrey
 }
+
 footer {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  margin-top:30px;
+  margin-top: 30px;
+  padding-top: 30px;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
 }
-footer ul,
-footer form {
+
+footer ul, footer form {
   display: block;
-  margin:0 auto 20px;
+  margin: 0 auto 20px;
 }
+
 footer li {
   padding-bottom: 15px;
 }
+
 .footer-list li:first-of-type {
-   background-color: yellow;
-   font-weight: bold;
- }
-footer > * {
+  font-weight: bold;
+}
+
+footer>* {
   text-align: center;
 }
+
 footer label {
   font-weight: bold;
 }
+
 .color-span {
   background-color: lightcoral;
 }
-.small-note{
+
+.small-note {
+  /*
   display: inline-block;
   max-width: 550px;
-  margin-left: 20px;
+  */
+  margin: 20px;
   text-align: justify;
   letter-spacing: 0.3px;
 }
 
-@media only screen and (min-width: 768px) and (max-width:1023px)  and (orientation: portrait){
+input {
+  width: 200px;
+  height: 20px;
+  padding-right: 76px;
+  overflow: hidden;
+}
+
+button {
+  margin-left: -75px;
+  height: 20px;
+  width: 70px;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:active {
+  border: none;
+  outline: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px) and (orientation: portrait) {
   body {
     background: cornflowerblue;
-    width:100%;
+    width: 100%;
   }
   header {
     justify-content: center;
   }
   header a {
-    position:absolute;
-    left:1%;
-    width:auto;
+    position: absolute;
+    left: 1%;
+    width: auto;
   }
   header h1 {
-    align-self:flex-end;
-    width:auto;
+    align-self: flex-end;
+    width: auto;
   }
 }
-@media only screen and (min-width: 768px) and (max-width:1023px)  and (orientation: landscape){
+
+@media only screen and (min-width: 768px) and (max-width:1023px) and (orientation: landscape) {
   body {
     background: lime;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
   }
   header {
     justify-content: center;
   }
   header a {
-    position:absolute;
-    left:1%;
-    width:auto;
+    position: absolute;
+    left: 1%;
+    width: auto;
   }
   header h1 {
-    align-self:flex-end;
-    width:auto;
+    align-self: flex-end;
+    width: auto;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   body {
     background: antiquewhite;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
   }
   header {
     margin: 10px 0;
@@ -270,7 +314,6 @@ footer label {
     */
     overflow: hidden;
     z-index: 1;
-
   }
   /*
   .nav-main-list-item,
@@ -282,7 +325,6 @@ footer label {
     border-bottom: 1px solid lightgrey
   }
  */
-
   .nav-main-list {
     /*
     width: 100%;
@@ -295,18 +337,18 @@ footer label {
     align-items: center;
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
-    height:50px;
-
+    height: 50px;
   }
   .nav-main-list-item {
-    width:auto;
-    height:auto;
-    border:none;
-    padding-bottom: 20px;;
+    width: auto;
+    height: auto;
+    border: none;
+    padding-bottom: 20px;
+    ;
     display: block;
   }
-  .nav-main-list-item +.nav-main-list-item {
-    padding-left:25px;
+  .nav-main-list-item+.nav-main-list-item {
+    padding-left: 25px;
   }
   nav li {
     border: none;
@@ -318,7 +360,7 @@ footer label {
     padding-top: 30px;
   }
   .main-photo-container {
-    display:flex;
+    display: flex;
     flex-flow: row nowrap;
     padding-bottom: 25px;
   }
@@ -328,7 +370,6 @@ footer label {
     padding-left: 2%;
     padding-right: 2%;
   }
-
   .sub-menu-list {
     display: flex;
     flex-flow: column nowrap;
@@ -336,7 +377,6 @@ footer label {
     padding-left: 25%;
     padding-top: auto;
   }
-
   .sub-menu img {
     max-width: 100%;
   }
@@ -345,12 +385,10 @@ footer label {
     position: relative;
     left: -30%;
   }
-  .sub-menu-list > li {
-    border:none;
+  .sub-menu-list>li {
+    border: none;
   }
-
-  .nav-main-list li:hover .sub-menu,
-  .sub-menu:hover .sub-menu {
+  .nav-main-list li:hover .sub-menu, .sub-menu:hover .sub-menu {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
@@ -358,7 +396,6 @@ footer label {
     position: absolute;
     top: 100px;
   }
-
   .sub-menu {
     background: white;
     width: 100%;
@@ -370,7 +407,6 @@ footer label {
     display: none;
     padding-bottom: 30px;
   }
-
   a[data-target="close-sub-menu"] {
     display: none;
   }
@@ -378,15 +414,8 @@ footer label {
     display: inline;
     width: auto;
   }
-
   .main-video-container {
-    width:auto;
+    width: auto;
     padding-bottom: 25px;
   }
-
-
-
-
-
-
 }
