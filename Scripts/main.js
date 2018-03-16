@@ -31,9 +31,10 @@ hamburgerIcon.addEventListener('click', function() {
 })
 /* add action to open*/
 openSubmenuLinks.forEach(function(link) {
-  link.addEventListener('click', function() {
+  link.addEventListener('click', function(e) {
     console.log(isPc.matches)
     if(!isPc.matches) {
+      e.preventDefault();
       let submenu = this.nextSibling.nextSibling;
       submenu.classList.add('open-sub-menu');
     }

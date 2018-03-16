@@ -1,0 +1,23 @@
+main {
+  margin: auto;
+}
+.subpage-photo-list{
+  margin:auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.subpage-photo-list li{
+  width:30%;
+  margin-top: 25px;
+}
+
+.subpage-photo-list figure,
+.subpage-photo-list img{
+  width:100%;
+
+}
+.subpage-photo-list figcaption {
+  text-align: center;
+  font-family: Lora;
+}

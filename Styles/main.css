@@ -5,6 +5,7 @@
 html {
   /*font-size: 16px;*/
   /*height:100%;*/
+  width:100%;
 }
 
 ul {
@@ -57,17 +58,18 @@ header {
 
 }
 
-header a {
+header+a {
   position: absolute;
   left: 1%;
   display: block;
   max-width: auto;
 }
 
-header h1 {
-  display: block;
+.logo {
+  /*display: block;*/
   max-width: auto;
   font-size: 24px;
+  margin:auto;
 }
 
 main {
@@ -80,13 +82,20 @@ main img {
 }
 
 .moveMainAndHeader {
-  left: 60%;
+  left: 240px;
   border-left: 1px solid lightgrey;
+  display:block;
 }
-
+.moveMainAndHeader .logo {
+  margin:auto;
+  position:relative;
+  left:300px;
+  /*padding-left:40px;*/
+}
 h1 {
   margin: 0;
   padding: 0;
+
 }
 
 .main-video-container {
@@ -107,6 +116,8 @@ video {
 .hamburger-link img {
   width: 24px;
   margin: 2px 0 0 2px;
+  position:absolute;
+  left:5px;
 }
 
 a[data-target="open-sub-menu"] {
@@ -136,7 +147,7 @@ nav {
 
 .sub-menu {
   background: white;
-  width: 100%;
+  width: 240px;
   visibility: hidden;
   position: absolute;
   top: 0;
@@ -177,8 +188,8 @@ nav {
 /*.nav-main-list li */
 
 .nav-main-list-item, .sub-menu-list>li {
-  display: inline-block;
-  width: 80%;
+  /*display: inline-block;*/
+  width: 200px;
   padding: 15px 0 10px 25px;
   margin: 0;
   border-bottom: 1px solid lightgrey
@@ -245,28 +256,17 @@ button:focus {
   outline: 0;
 }
 
-@media only screen and (min-width: 768px) and (max-width:1023px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width:1023px) {
   body {
-
     width: 100%;
   }
   header {
     justify-content: center;
   }
-  header a {
-    position: absolute;
-    left: 1%;
-    width: auto;
-  }
-  header h1 {
-    align-self: flex-end;
-    width: auto;
-  }
 }
-
-@media only screen and (min-width: 768px) and (max-width:1023px) and (orientation: landscape) {
+/*
+@media only screen and (min-width: 768px) and (max-width:1024px) and (orientation: landscape) {
   body {
-
     width: 100%;
     height: 100%;
   }
@@ -283,10 +283,9 @@ button:focus {
     width: auto;
   }
 }
-
+*/
 @media only screen and (min-width: 1025px) {
   body {
-
     width: 100%;
     height: 100%;
   }
@@ -337,7 +336,7 @@ button:focus {
     height: auto;
     border: none;
     padding-bottom: 20px;
-    ;
+
     display: block;
   }
   .nav-main-list-item+.nav-main-list-item {
