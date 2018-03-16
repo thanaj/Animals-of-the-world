@@ -48,3 +48,12 @@ closeSubmenuLinks.forEach(function(link) {
     submenu.classList.remove('open-sub-menu');
   })
 })
+
+window.addEventListener('resize', function() {
+  if (main.classList.contains('moveMainAndHeader') && isPc.matches) {
+    nav.classList.remove('visibleNav');
+    main.classList.remove('moveMainAndHeader');
+    header.classList.remove('moveMainAndHeader');
+    document.body.classList.remove('noScroll');
+  }
+})

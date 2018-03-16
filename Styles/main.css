@@ -54,7 +54,7 @@ header {
   z-index: 1;
   position: relative;
   left: 0;
-
+  padding:9px 0 9px 0;
 }
 
 header+a {
@@ -81,7 +81,7 @@ main img {
 }
 
 .moveMainAndHeader {
-  left: 240px;
+  left: 230px;
   border-left: 1px solid lightgrey;
   display:block;
 }
@@ -123,6 +123,7 @@ a[data-target="open-sub-menu"] {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+
 }
 
 a[data-target="close-sub-menu"]>span {
@@ -151,7 +152,7 @@ nav {
   position: absolute;
   top: 0;
   left: 768px;
-  transition: all 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
 }
 
 .sub-menu ul {
@@ -166,7 +167,7 @@ nav {
 
 .sub-menu > a {
   display: inline-block;
-  padding: 10px 0 10px 25px;
+  padding: 16px 0 10px 25px;
   margin: 0;
   border-bottom: 1px solid lightgrey;
   width: 80%;
@@ -291,6 +292,18 @@ button:focus {
     height: 100%;
   }
 */
+/*
+.moveMainAndHeader{
+  left:0;
+}
+*/
+  main {
+    /*
+    position:absolute;
+    left:0;
+    top:0;
+    */
+  }
   header {
     margin: 10px 0;
   }
@@ -305,8 +318,8 @@ button:focus {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    */
     overflow: hidden;
+    */
     z-index: 1;
   }
   /*
@@ -397,7 +410,7 @@ button:focus {
     position: static;
     top: 0;
     left: 0;
-    transition: all 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out;
     display: none;
     padding-bottom: 30px;
   }
