@@ -1,0 +1,61 @@
+html {
+  font-size:  62.5%;
+}
+main {
+  border-top: 0.1rem solid grey;
+}
+h2 {
+  font-size: 2.2rem;
+}
+article {
+  font-family: Lora;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items:center;
+  text-align:justify;
+}
+img,
+figure,
+figcaption {
+  padding: 0;
+  margin: 0;
+}
+article p {
+  margin:auto;
+  width:80%;
+  padding: 2rem 0;
+}
+article figure {
+  width:80%;
+  margin:auto;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+  article p {
+    width:70%;
+  }
+  article figure {
+    width:70%;
+  }
+  main {
+    border-top: 0.1rem solid grey;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  article p {
+    width:50%;
+    max-width: 70rem;
+  }
+  article figure {
+    width:70%;
+    max-width: 70rem;
+  }
+  main {
+    border-top: none;
+  }
+}
