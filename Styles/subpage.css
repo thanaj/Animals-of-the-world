@@ -1,6 +1,7 @@
-h1{
+h1 {
   /*font-size: 24px;*/
 }
+
 h2 {
   font-size: 2.2rem;
   text-align: center;
@@ -9,14 +10,15 @@ h2 {
 main {
   /*margin: auto;*/
   border-top: 0.1rem solid grey;
-  padding:0;
+  padding: 0;
   font-size: 1.8rem;
 }
 
 figure {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
+
 .subpage-photo-list {
   margin: auto;
   display: flex;
@@ -25,14 +27,16 @@ figure {
 }
 
 .subpage-photo-list li {
-  width:32rem;
+  width: 32rem;
 }
+
 .subpage-photo-list figure {
-  width:auto;
+  width: auto;
   overflow: hidden;
   /*border: 1px solid grey;*/
-  margin:1rem 0;
+  margin: 1rem 0;
 }
+
 .img-container {
   border: 0.1rem solid white;
   margin: 2%;
@@ -45,7 +49,6 @@ figure {
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-
 }
 
 .img-container img:hover {
@@ -53,6 +56,41 @@ figure {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+.big-photo-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: yellow;
+  display: none;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.big-photo-container figure {
+  width:65%;
+}
+span[class*="glyphicon-arrow"] {
+  width: 15%;
+  background-color: lime;
+
+
+}
+
+span[class*="glyphicon-remove"] {
+  position:absolute;
+  top:1rem;
+  right:1rem;
+}
+
+.big-photo-container.open {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 @media only screen and (min-width: 768px) and (max-width:1023px) {
   main {
     border-top: 0.1rem solid grey;
