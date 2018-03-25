@@ -75,21 +75,22 @@ figure {
   color: white;
   font-size: 4rem;
 }
-span[class*="glyphicon-arrow"] {
+span[class*="arrow"] {
   width: 15%;
   text-align:center;
   padding-top: 20%;
   padding-bottom: 20%;
 }
 
-span[class*="glyphicon-remove"] {
+span[class*="remove"] {
   position:absolute;
-  top:1rem;
+  top:-1rem;
   right:1rem;
+  font-weight: bold;
 }
 span {
   color:white;
-  font-size: 4rem;
+  font-size: 6rem;
 }
 .big-photo-container.open {
   display: flex;
