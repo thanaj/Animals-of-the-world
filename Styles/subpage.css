@@ -63,7 +63,7 @@ figure {
   top: 0;
   width: 100%;
   height: 100%;
-  background: yellow;
+  background: rgba(10,10,10,0.8);
   display: none;
   flex-flow: row nowrap;
   justify-content: center;
@@ -73,11 +73,15 @@ figure {
 .big-photo-container figure {
   width:65%;
 }
+.big-photo-caption {
+  color: white;
+  font-size: 4rem;
+}
 span[class*="glyphicon-arrow"] {
   width: 15%;
-  background-color: lime;
-
-
+  text-align:center;
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 
 span[class*="glyphicon-remove"] {
@@ -85,7 +89,10 @@ span[class*="glyphicon-remove"] {
   top:1rem;
   right:1rem;
 }
-
+span {
+  color:white;
+  font-size: 4rem;
+}
 .big-photo-container.open {
   display: flex;
   flex-flow: row nowrap;

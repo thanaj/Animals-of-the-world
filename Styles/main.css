@@ -18,7 +18,9 @@ a {
   color: black;
   text-decoration: none;
 }
-
+a:hover {
+  text-decoration: none;
+}
 .noScroll {
   overflow: hidden;
   position: fixed;

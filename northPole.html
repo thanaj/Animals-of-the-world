@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Animals of the world</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"-->
   <link rel="stylesheet" href="Styles/main.css">
   <link rel="stylesheet" href="Styles/subpage.css">
@@ -17,7 +17,7 @@
 <body>
   <header data-target="header">
     <a href="#" class="hamburger-link" data-target="hamburger">
-      <img src="Images/hamburger-icon.png" alt="">
+      <img src="Images/hamburger-icon.png" alt="" >
     </a>
     <h1 class="logo">
       <a href="index.html">Animals of the world</a>
@@ -201,12 +201,21 @@
   <!-- MAIN -->
 
   <main data-target="main">
+    <div class="big-photo-container" data-target="big-photo-container">
+      <span class="glyphicon glyphicon-arrow-left" data-target="left-arrow"></span>
+      <figure>
+        <img src="Images/tiger_2_small.jpg" alt="" data-target="big-img">
+        <figcaption class="big-photo-caption" data-target="big-photo-caption">Tutaj jest jakiś opis do zdjęcia</figcaption>
+      </figure>
+      <span class="glyphicon glyphicon-remove" data-target="close-button"></span>
+      <span class="glyphicon glyphicon-arrow-right" data-target="right-arrow"></span>
+    </div>
     <h2>North Pole</h2>
     <ul class="subpage-photo-list">
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/penguin_small.jpeg" alt="">
+            <img src="Images/penguin_small.jpeg" alt="" data-target="img-with-animal">
           </div>
           <figcaption>Penguin</figcaption>
         </figure>
@@ -215,7 +224,7 @@
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/killerWhale_1_small.jpg" alt="">
+            <img src="Images/killerWhale_1_small.jpg" alt="" data-target="img-with-animal">
           </div>
           <figcaption>Killer Whale</figcaption>
         </figure>
@@ -223,7 +232,7 @@
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/killerWhale_2_small.jpg" alt="">
+            <img src="Images/killerWhale_2_small.jpg" alt="" data-target="img-with-animal">
           </div>
           <figcaption>Killer Whale</figcaption>
         </figure>
@@ -231,7 +240,7 @@
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/arcticFox_3_small.jpg" alt="">
+            <img src="Images/arcticFox_3_small.jpg" alt="" data-target="img-with-animal">
           </div>
           <figcaption>Arctic Fox</figcaption>
         </figure>
@@ -239,7 +248,7 @@
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/polarBear_1_small.jpg" alt="">
+            <img src="Images/polarBear_1_small.jpg" alt="" data-target="img-with-animal">
           </div>
           <figcaption>Polar Bear</figcaption>
         </figure>
@@ -247,7 +256,7 @@
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/polarBear_3_small.jpg" alt="">
+            <img src="Images/polarBear_3_small.jpg" alt="" data-target="img-with-animal">
           </div>
           <figcaption>Polar Bear</figcaption>
         </figure>
@@ -255,12 +264,12 @@
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/polarBear_5_small.jpg" alt="">
+            <img src="Images/polarBear_5_small.jpg" alt="" data-target="img-with-animal">
           </div>
           <figcaption>Polar Bear</figcaption>
         </figure>
       </li>
-    
+
 
 
     </ul>
@@ -295,6 +304,7 @@
 
 
   <script type="text/javascript" src="Scripts/main.js"></script>
+  <script type="text/javascript" src="Scripts/subpageContinent.js"></script>
 </body>
 
 </html>

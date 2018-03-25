@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Animals of the world</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"-->
   <link rel="stylesheet" href="Styles/main.css">
   <link rel="stylesheet" href="Styles/subpage.css">
@@ -201,12 +201,21 @@
   <!-- MAIN -->
 
   <main data-target="main">
+    <div class="big-photo-container" data-target="big-photo-container">
+      <span class="glyphicon glyphicon-arrow-left" data-target="left-arrow"></span>
+      <figure>
+        <img src="Images/tiger_2_small.jpg" alt="" data-target="big-img">
+        <figcaption class="big-photo-caption" data-target="big-photo-caption">Tutaj jest jakiś opis do zdjęcia</figcaption>
+      </figure>
+      <span class="glyphicon glyphicon-remove" data-target="close-button"></span>
+      <span class="glyphicon glyphicon-arrow-right" data-target="right-arrow"></span>
+    </div>
     <h2>Northern America</h2>
     <ul class="subpage-photo-list">
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/moose_small.jpeg" alt="">
+            <img src="Images/moose_small.jpeg" data-target="img-with-animal">
           </div>
           <figcaption>Moose</figcaption>
         </figure>
@@ -215,7 +224,7 @@
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/grizzly_2_small.jpg" alt="">
+            <img src="Images/grizzly_2_small.jpg" data-target="img-with-animal">
           </div>
           <figcaption>Grizzly</figcaption>
         </figure>
@@ -223,7 +232,7 @@
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/grizzly_3_small.jpg" alt="">
+            <img src="Images/grizzly_3_small.jpg" data-target="img-with-animal">
           </div>
           <figcaption>Grizzly</figcaption>
         </figure>
@@ -231,7 +240,7 @@
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/grizzly_4_small.jpg" alt="">
+            <img src="Images/grizzly_4_small.jpg" data-target="img-with-animal">
           </div>
           <figcaption>Grizzly</figcaption>
         </figure>
@@ -239,7 +248,7 @@
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/grizzly_6_small.jpg" alt="">
+            <img src="Images/grizzly_6_small.jpg" data-target="img-with-animal">
           </div>
           <figcaption>Grizzly</figcaption>
         </figure>
@@ -247,7 +256,7 @@
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/praireDog_1_small.jpg" alt="">
+            <img src="Images/praireDog_1_small.jpg" data-target="img-with-animal">
           </div>
           <figcaption>Praire dog</figcaption>
         </figure>
@@ -255,7 +264,7 @@
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/praireDog_2_small.jpg" alt="">
+            <img src="Images/praireDog_2_small.jpg" data-target="img-with-animal">
           </div>
           <figcaption>Praire dog</figcaption>
         </figure>
@@ -263,7 +272,7 @@
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/praireDog_3_small.jpg" alt="">
+            <img src="Images/praireDog_3_small.jpg" data-target="img-with-animal">
           </div>
           <figcaption>Argument between Praire Dogs</figcaption>
         </figure>
@@ -271,7 +280,7 @@
       <li>
         <figure>
           <div class="img-container">
-            <img src="Images/praireDog_4_small.jpg" alt="">
+            <img src="Images/praireDog_4_small.jpg" data-target="img-with-animal">
           </div>
           <figcaption>Looking at me ?</figcaption>
         </figure>
@@ -310,6 +319,7 @@
 
 
   <script type="text/javascript" src="Scripts/main.js"></script>
+  <script type="text/javascript" src="Scripts/subpageContinent.js"></script>
 </body>
 
 </html>
