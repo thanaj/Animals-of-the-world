@@ -1,5 +1,5 @@
 h1 {
-  /*font-size: 24px;*/
+
 }
 
 h2 {
@@ -8,7 +8,6 @@ h2 {
 }
 
 main {
-  /*margin: auto;*/
   border-top: 0.1rem solid grey;
   padding: 0;
   font-size: 1.8rem;
@@ -33,7 +32,6 @@ figure {
 .subpage-photo-list figure {
   width: auto;
   overflow: hidden;
-  /*border: 1px solid grey;*/
   margin: 1rem 0;
 }
 

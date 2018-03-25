@@ -1,9 +1,5 @@
-* {
-  /*border:0.1px solid black;*/
-}
 
 html {
-  /*font-size: 16px;*/
   font-size: 62.5%;
   overflow-x: hidden;
 }
@@ -94,7 +90,7 @@ main img {
   margin: auto;
   position: relative;
   left: 30rem;
-  /*padding-left:40px;*/
+
 }
 
 h1 {
@@ -135,8 +131,6 @@ a[data-target="close-sub-menu"]>span {
   padding-right: 5%;
 }
 
-
-/*--------visibility nav*/
 
 nav {
   width: 70%;
@@ -190,10 +184,9 @@ nav {
 }
 
 
-/*.nav-main-list li */
+
 
 .nav-main-list-item, .sub-menu-list>li {
-  /*display: inline-block;*/
   width: 20rem;
   padding: 1.5rem 0 1rem 2.5rem;
   margin: 0;
@@ -261,57 +254,14 @@ button:focus {
 }
 
 @media only screen and (min-width: 768px) and (max-width:1023px) {
-  /*
-  body {
-    width: 100%;
-  }
-  */
   header {
     justify-content: center;
   }
 }
 
-
-/*
-@media only screen and (min-width: 768px) and (max-width:1024px) and (orientation: landscape) {
-  body {
-    width: 100%;
-    height: 100%;
-  }
-  header {
-    justify-content: center;
-  }
-  header a {
-    position: absolute;
-    left: 1%;
-    width: auto;
-  }
-  header h1 {
-    align-self: flex-end;
-    width: auto;
-  }
-}
-*/
 
 @media only screen and (min-width: 1025px) {
-  /*
-  body {
-    width: 100%;
-    height: 100%;
-  }
-*/
-  /*
-.moveMainAndHeader{
-  left:0;
-}
-*/
-  main {
-    /*
-    position:absolute;
-    left:0;
-    top:0;
-    */
-  }
+
   header {
     margin: 1rem 0;
   }
@@ -322,30 +272,10 @@ button:focus {
     width: 100%;
     position: static;
     visibility: visible;
-    /*
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    overflow: hidden;
-    */
     z-index: 1;
   }
-  /*
-  .nav-main-list-item,
-  .sub-menu-list > li{
-    display: inline-block;
-    width: 80%;
-    padding: 0;
-    margin: 0;
-    border-bottom: 1px solid lightgrey
-  }
- */
+
   .nav-main-list {
-    /*
-    width: 100%;
-    margin: 25px auto;
-    padding: 10px;
-    */
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
