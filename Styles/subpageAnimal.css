@@ -8,7 +8,7 @@ h2 {
   font-size: 2.2rem;
 }
 article {
-  font-family: Lora;
+  font-family: Lora, Georgia, serif;
   font-size: 1.8rem;
   line-height: 3rem;
   display: flex;
